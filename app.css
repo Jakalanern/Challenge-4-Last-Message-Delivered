@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(172, 210, 236);
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.main_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(243, 243, 243);
+  width: 450px;
+  padding: 1em 1em 0em 1em;
+}
+
+.main_box h1 {
+  font-size: 1.5em;
+  margin: 0.5em 0em 1em 0em;
+}
+
+.main_box form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 1em;
+}
+
+.main_box input {
+  padding: 0.25rem 0.25rem;
+  font-size: 1.25em;
+}
+
+.main_box button {
+  padding: 0.75rem 1rem;
+  align-self: center;
+  margin-top: 1.25em;
+  background: rgb(156, 193, 218);
+  border: 2px solid rgb(169, 220, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.05em;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.delivered {
+  opacity: 0;
+  z-index: -1;
+  text-align: center;
+  width: 375px;
+  word-wrap: break-word;
+  white-space: normal;
+}
